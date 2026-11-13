@@ -68,3 +68,52 @@ cmd /c "npm run qa:run-tests"
 ```powershell
 python test_runner_agent.py --filter "TC_RF_003"
 ```
+## Registro del proyecto qa-agentic-framework
+
+Repositorio de pruebas de practicas con agentes y MCP.
+
+### Estructuración y creación de Skills (SKILL.md)
+
+Creamos la carpeta base qa-agentic-framework y la estructura de carpetas en el workspace.
+
+Definimos e implementamos las tres Skills agénticas fundamentales:
+
+- `qa-test-case-creator`: analiza requerimientos e historias de usuario y genera matrices de pruebas.
+
+- `qa-web-playwright-automation`: define criterios y patrones para automatización web E2E con Playwright, TypeScript y Page Object Model.
+
+- `qa-api-playwright-automation`: define reglas para automatizar servicios REST/SOAP con `APIRequestContext`, validar códigos de estado y esquemas JSON, y medir SLA.
+
+### Configuración del servidor MCP (Model Context Protocol)
+
+Se configuró el servidor MCP de filesystem (`@modelcontextprotocol/server-filesystem`) en `settings.json` de VS Code para que Copilot pueda leer y ejecutar las skills del workspace.
+
+También se documentó la configuración local de permisos de ejecución y del modo autónomo de la interfaz.
+
+### Generación e integración de pruebas de API (pets-demo)
+
+La skill de API se conectó con [pets-demo](https://pets-demo.onrender.com/pets).
+
+El agente inspeccionó el endpoint y generó:
+
+- El servicio encapsulado (`services/PetsService.ts`).
+
+- La suite (`tests/api/pets.spec.ts`), con operaciones CRUD (GET, POST, PUT, PATCH, DELETE), aserciones de contrato JSON, Type Guards, Type Narrowing y medición de SLA.
+
+### Compatibilidad y entorno de ejecución
+
+Se ajustaron comandos de consola para Windows CMD/PowerShell (`npm init playwright@latest -y`).
+
+Se instalaron `@types/node` y TypeScript localmente para resolver el error `Cannot find name 'process'`.
+
+### Exploración web y generación de casos E2E
+
+Se diseñaron estrategias para que las Skills exploren componentes DOM web, como [playgroundweb](https://gustavoplaywright.github.io/playgroundweb/), y generen matrices de prueba e interfaces POM.
+
+### Limpieza y publicación del repositorio (pruebasQaAgentic)
+
+Se configuraron reglas en `.gitignore` (`**/node_modules/`, `test-results/`, etc.) para evitar incluir dependencias y resultados generados.
+
+Se limpió el índice de Git para excluir directorios de dependencias.
+
+La rama local se renombró de `master` a `main` y se publicó el repositorio en GitHub.

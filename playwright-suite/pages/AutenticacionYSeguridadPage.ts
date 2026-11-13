@@ -19,7 +19,6 @@ export class AutenticacionYSeguridadPage {
   readonly emailInput: Locator;
   readonly passwordInput: Locator;
   readonly confirmPasswordInput: Locator;
-  readonly rememberMeCheckbox: Locator;
   readonly lockoutBanner: Locator;
 
   constructor(page: Page) {

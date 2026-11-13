@@ -20,7 +20,6 @@ export class CarritoDeComprasYCheckoutPage {
   readonly applyCouponButton: Locator;
   readonly totalOrderAmount: Locator;
   readonly discountAmount: Locator;
-  readonly checkoutButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
