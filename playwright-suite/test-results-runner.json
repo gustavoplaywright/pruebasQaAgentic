@@ -1,0 +1,2235 @@
+{
+  "config": {
+    "argv": [
+      "D:\\workspace\\node-v24.19.0-win-x64\\node.exe",
+      "D:\\workspace\\agentic\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=D:\\workspace\\agentic\\playwright-suite\\playwright.config.ts",
+      "--project=chromium",
+      "--reporter=json"
+    ],
+    "configFile": "D:\\workspace\\agentic\\playwright-suite\\playwright.config.ts",
+    "rootDir": "D:/workspace/agentic/playwright-suite/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/workspace/agentic/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/workspace/agentic/playwright-suite/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\workspace\\agentic\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "chromium",
+        "testDir": "D:\\workspace\\agentic\\playwright-suite\\tests",
+        "snapshotDir": "D:\\workspace\\agentic\\playwright-suite\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:3000",
+          "trace": "on-first-retry",
+          "screenshot": "only-on-failure",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "python -m http.server 3000 --directory ./mock-app",
+      "port": 3000,
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "autenticacion_y_seguridad.spec.ts",
+      "file": "autenticacion_y_seguridad.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Módulo: Autenticacion Y Seguridad",
+          "file": "autenticacion_y_seguridad.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_RF_001_001: [@P1] Verificar flujo exitoso principal para Registro de Nuevos Usuarios",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3754,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:29:45.303Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--230b8-Registro-de-Nuevos-Usuarios-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--230b8-Registro-de-Nuevos-Usuarios-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--230b8-Registro-de-Nuevos-Usuarios-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-2319b2fbc6d029e0ed97",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_001_002: [@P1] Validar rechazo al enviar formulario con campos requeridos vacíos en Registro de Nuevos Usuarios",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 3797,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:29:45.539Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--50e30-Registro-de-Nuevos-Usuarios-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--50e30-Registro-de-Nuevos-Usuarios-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--50e30-Registro-de-Nuevos-Usuarios-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-6cd6b4d3b4b74e2fc896",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_001_003: [@P2] Validar límites inferiores (Mínimo - 1 e Inmediato Válido) en Registro de Nuevos Usuarios",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2921,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:29:55.080Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--57a52-Registro-de-Nuevos-Usuarios-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--57a52-Registro-de-Nuevos-Usuarios-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--57a52-Registro-de-Nuevos-Usuarios-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-e1f93ffe5803803f90b6",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_001_004: [@P2] Validar límites superiores (Máximo exacto y Máximo + 1) en Registro de Nuevos Usuarios",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 2929,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:29:54.973Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--fa486-Registro-de-Nuevos-Usuarios-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--fa486-Registro-de-Nuevos-Usuarios-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--fa486-Registro-de-Nuevos-Usuarios-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-35da16702b58a1506f82",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 64,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_001_005: [@P1] Validar combinatoria de reglas de negocio en Registro de Nuevos Usuarios",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1668,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:01.841Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--17672-Registro-de-Nuevos-Usuarios-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--17672-Registro-de-Nuevos-Usuarios-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--17672-Registro-de-Nuevos-Usuarios-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-c322ec3d71c7b7bc17cf",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 80,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_001_006: [@P1] Verificar resistencia a inyecciones, caracteres especiales y entradas anómalas en Registro de Nuevos Usuarios",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 1380,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:02.185Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--a058a-Registro-de-Nuevos-Usuarios-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--a058a-Registro-de-Nuevos-Usuarios-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--a058a-Registro-de-Nuevos-Usuarios-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-d5bfa9b157f8255e8241",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 91,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_001_007: [@P2] Verificar criterio: El usuario debe ingresar un correo electrónico con formato v... en Registro de Nuevos Usuarios",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 876,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:06.716Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--5dd48-Registro-de-Nuevos-Usuarios-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--5dd48-Registro-de-Nuevos-Usuarios-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--5dd48-Registro-de-Nuevos-Usuarios-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-7ebe12ff831ad227d3a9",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 106,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_001_008: [@P2] Verificar criterio: Al registrarse correctamente, el sistema debe enviar un corr... en Registro de Nuevos Usuarios",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 899,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:07.720Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--d1452-Registro-de-Nuevos-Usuarios-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--d1452-Registro-de-Nuevos-Usuarios-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--d1452-Registro-de-Nuevos-Usuarios-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-876fde26bba3f2babc00",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 120,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_002_009: [@P1] Verificar flujo exitoso principal para Inicio de Sesión y Bloqueo de Cuenta por Intentos Fallidos",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 753,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:11.766Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--afe16-uenta-por-Intentos-Fallidos-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--afe16-uenta-por-Intentos-Fallidos-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--afe16-uenta-por-Intentos-Fallidos-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-020a210287484be6cc20",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 134,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_002_010: [@P1] Validar rechazo al enviar formulario con campos requeridos vacíos en Inicio de Sesión y Bloqueo de Cuenta por Intentos Fallidos",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1328,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:15.337Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--2e42e-uenta-por-Intentos-Fallidos-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--2e42e-uenta-por-Intentos-Fallidos-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--2e42e-uenta-por-Intentos-Fallidos-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-03d9fd418b9d504d414d",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 152,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_002_011: [@P2] Validar límites inferiores (Mínimo - 1 e Inmediato Válido) en Inicio de Sesión y Bloqueo de Cuenta por Intentos Fallidos",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 955,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:17.392Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--0b580-uenta-por-Intentos-Fallidos-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--0b580-uenta-por-Intentos-Fallidos-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--0b580-uenta-por-Intentos-Fallidos-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-00443428ee8d140ec578",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 165,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_002_012: [@P2] Validar límites superiores (Máximo exacto y Máximo + 1) en Inicio de Sesión y Bloqueo de Cuenta por Intentos Fallidos",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 997,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:21.708Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--c302b-uenta-por-Intentos-Fallidos-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--c302b-uenta-por-Intentos-Fallidos-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--c302b-uenta-por-Intentos-Fallidos-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-298650e2f63c7250e684",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 181,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_002_013: [@P1] Validar combinatoria de reglas de negocio en Inicio de Sesión y Bloqueo de Cuenta por Intentos Fallidos",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 811,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:22.445Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--7f574-uenta-por-Intentos-Fallidos-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--7f574-uenta-por-Intentos-Fallidos-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--7f574-uenta-por-Intentos-Fallidos-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-ceef71fb0b5937a4b9e1",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 197,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_002_014: [@P2] Validar ciclo de vida y transición de estados en Inicio de Sesión y Bloqueo de Cuenta por Intentos Fallidos",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 1202,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:26.610Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--29cdd-uenta-por-Intentos-Fallidos-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--29cdd-uenta-por-Intentos-Fallidos-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--29cdd-uenta-por-Intentos-Fallidos-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-670a29a50cb635e26bd6",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 215,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_002_015: [@P1] Verificar resistencia a inyecciones, caracteres especiales y entradas anómalas en Inicio de Sesión y Bloqueo de Cuenta por Intentos Fallidos",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 941,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:27.546Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--84675-uenta-por-Intentos-Fallidos-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--84675-uenta-por-Intentos-Fallidos-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--84675-uenta-por-Intentos-Fallidos-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-5d76d0e732964caa8288",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 233,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_002_016: [@P2] Verificar criterio: El usuario ingresa correo y contraseña válidos y accede exit... en Inicio de Sesión y Bloqueo de Cuenta por Intentos Fallidos",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 1371,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpath)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmainHeading)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m   }\n \u001b[90m 43 |\u001b[39m\n \u001b[90m 44 |\u001b[39m   \u001b[36masync\u001b[39m fillCredentials(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m pass\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nError: strict mode violation: getByRole('heading', { level: 1 }) resolved to 2 elements:\n    1) <h1>Iniciar Sesión / Registro</h1> aka getByRole('heading', { name: 'Iniciar Sesión / Registro' })\n    2) <h1>Checkout y Cupones</h1> aka getByRole('heading', { name: 'Checkout y Cupones' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { level: 1 }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n   at ..\\pages\\AutenticacionYSeguridadPage.ts:41\n\n  39 |   async goto() {\n  40 |     await this.page.goto(this.path);\n> 41 |     await expect(this.mainHeading).toBeVisible();\n     |                                    ^\n  42 |   }\n  43 |\n  44 |   async fillCredentials(email: string, pass: string) {\n    at AutenticacionYSeguridadPage.goto (D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts:41:36)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\autenticacion_y_seguridad.spec.ts:14:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:31.437Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--6230b-uenta-por-Intentos-Fallidos-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--6230b-uenta-por-Intentos-Fallidos-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\autenticacion_y_seguridad--6230b-uenta-por-Intentos-Fallidos-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\AutenticacionYSeguridadPage.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c4bf1a041720ae7f3596-d722c35cbd4bbb105341",
+              "file": "autenticacion_y_seguridad.spec.ts",
+              "line": 251,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "carrito_de_compras_y_checkout.spec.ts",
+      "file": "carrito_de_compras_y_checkout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Módulo: Carrito De Compras Y Checkout",
+          "file": "carrito_de_compras_y_checkout.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_RF_003_017: [@P1] Verificar flujo exitoso principal para Aplicación de Cupones de Descuento en Checkout",
+              "ok": true,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1855,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:32.035Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-609a2bf10c2b3c82ca06",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_003_018: [@P1] Validar rechazo al enviar formulario con campos requeridos vacíos en Aplicación de Cupones de Descuento en Checkout",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 6107,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\u001b[22m\n\n    at CarritoDeComprasYCheckoutPage.expectError (D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts:53:35)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:38:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts",
+                          "column": 35,
+                          "line": 53
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\CarritoDeComprasYCheckoutPage.ts:53\n\n\u001b[0m \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m   \u001b[36masync\u001b[39m expectError(messagePattern\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRegExp\u001b[39m \u001b[33m|\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorAlert)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mif\u001b[39m (messagePattern) {\n \u001b[90m 55 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorAlert)\u001b[33m.\u001b[39mtoContainText(messagePattern)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts",
+                            "column": 35,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\u001b[22m\n\n\n   at ..\\pages\\CarritoDeComprasYCheckoutPage.ts:53\n\n  51 |\n  52 |   async expectError(messagePattern?: RegExp | string) {\n> 53 |     await expect(this.errorAlert).toBeVisible();\n     |                                   ^\n  54 |     if (messagePattern) {\n  55 |       await expect(this.errorAlert).toContainText(messagePattern);\n  56 |     }\n    at CarritoDeComprasYCheckoutPage.expectError (D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts:53:35)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:38:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:36.829Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-807b3-es-de-Descuento-en-Checkout-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-807b3-es-de-Descuento-en-Checkout-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-807b3-es-de-Descuento-en-Checkout-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts",
+                        "column": 35,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-fbabd0510493ab22cdfe",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_003_019: [@P2] Validar límites inferiores (Mínimo - 1 e Inmediato Válido) en Aplicación de Cupones de Descuento en Checkout",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 941,
+                      "error": {
+                        "message": "TypeError: pageObject.fillCredentials is not a function",
+                        "stack": "TypeError: pageObject.fillCredentials is not a function\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:49:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                          "column": 22,
+                          "line": 49
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[90m// Precondición: Pantalla de captura de datos habilitada para Aplicación de Cupones de Descuento en Checkout.\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[90m// 1. Probar valor frontera Min - 1 (Inválido)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39mvalidUser\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39minvalidUser\u001b[33m.\u001b[39mshortPassword)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39msubmit()\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mexpectError(\u001b[35m/mínimo|longitud insuficiente|longitud/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[90m// 2. Probar valor frontera Min exacto (Válido)\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                            "column": 22,
+                            "line": 49
+                          },
+                          "message": "TypeError: pageObject.fillCredentials is not a function\n\n  47 |     // Precondición: Pantalla de captura de datos habilitada para Aplicación de Cupones de Descuento en Checkout.\n  48 |     // 1. Probar valor frontera Min - 1 (Inválido)\n> 49 |     await pageObject.fillCredentials(testData.auth.validUser.email, testData.auth.invalidUser.shortPassword);\n     |                      ^\n  50 |     await pageObject.submit();\n  51 |     await pageObject.expectError(/mínimo|longitud insuficiente|longitud/i);\n  52 |     // 2. Probar valor frontera Min exacto (Válido)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:49:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:34.962Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-dc4b0-es-de-Descuento-en-Checkout-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-dc4b0-es-de-Descuento-en-Checkout-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-dc4b0-es-de-Descuento-en-Checkout-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                        "column": 22,
+                        "line": 49
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-2a27fc76866cc4b95e5b",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_003_020: [@P2] Validar límites superiores (Máximo exacto y Máximo + 1) en Aplicación de Cupones de Descuento en Checkout",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1215,
+                      "error": {
+                        "message": "TypeError: pageObject.fillCredentials is not a function",
+                        "stack": "TypeError: pageObject.fillCredentials is not a function\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:65:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                          "column": 22,
+                          "line": 65
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 63 |\u001b[39m     \u001b[90m// Precondición: Pantalla de captura de datos habilitada para Aplicación de Cupones de Descuento en Checkout.\u001b[39m\n \u001b[90m 64 |\u001b[39m     \u001b[90m// 1. Probar valor frontera Max exacto (Válido)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39mvalidUser\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39minvalidUser\u001b[33m.\u001b[39mboundaryMaxPassword)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39msubmit()\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[90m// 2. Probar valor frontera Max + 1 (Inválido)\u001b[39m\n \u001b[90m 68 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39mvalidUser\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39minvalidUser\u001b[33m.\u001b[39mlongPassword)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                            "column": 22,
+                            "line": 65
+                          },
+                          "message": "TypeError: pageObject.fillCredentials is not a function\n\n  63 |     // Precondición: Pantalla de captura de datos habilitada para Aplicación de Cupones de Descuento en Checkout.\n  64 |     // 1. Probar valor frontera Max exacto (Válido)\n> 65 |     await pageObject.fillCredentials(testData.auth.validUser.email, testData.auth.invalidUser.boundaryMaxPassword);\n     |                      ^\n  66 |     await pageObject.submit();\n  67 |     // 2. Probar valor frontera Max + 1 (Inválido)\n  68 |     await pageObject.fillCredentials(testData.auth.validUser.email, testData.auth.invalidUser.longPassword);\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:65:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:38.046Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-5cae1-es-de-Descuento-en-Checkout-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-5cae1-es-de-Descuento-en-Checkout-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-5cae1-es-de-Descuento-en-Checkout-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                        "column": 22,
+                        "line": 65
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-73a3e4b0cc623dfc0eb4",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 62,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_003_021: [@P1] Validar combinatoria de reglas de negocio en Aplicación de Cupones de Descuento en Checkout",
+              "ok": true,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 552,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:40.753Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-7a01ec26e0c16874e1aa",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 78,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_003_022: [@P1] Verificar resistencia a inyecciones, caracteres especiales y entradas anómalas en Aplicación de Cupones de Descuento en Checkout",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 456,
+                      "error": {
+                        "message": "TypeError: pageObject.fillCredentials is not a function",
+                        "stack": "TypeError: pageObject.fillCredentials is not a function\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:94:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                          "column": 22,
+                          "line": 94
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 92 |\u001b[39m     \u001b[90m// Precondición: Módulo expuesto y accesible para recepción de datos.\u001b[39m\n \u001b[90m 93 |\u001b[39m     \u001b[90m// Prueba de robustez frente a XSS y SQL Injection\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 94 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39msecurityPayloads\u001b[33m.\u001b[39mxss\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39msecurityPayloads\u001b[33m.\u001b[39msqli)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 95 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39msubmit()\u001b[33m;\u001b[39m\n \u001b[90m 96 |\u001b[39m     \u001b[90m// Aserción: La aplicación no ejecuta scripts y maneja el rechazo limpiamente\u001b[39m\n \u001b[90m 97 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mexpectError()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                            "column": 22,
+                            "line": 94
+                          },
+                          "message": "TypeError: pageObject.fillCredentials is not a function\n\n  92 |     // Precondición: Módulo expuesto y accesible para recepción de datos.\n  93 |     // Prueba de robustez frente a XSS y SQL Injection\n> 94 |     await pageObject.fillCredentials(testData.securityPayloads.xss, testData.securityPayloads.sqli);\n     |                      ^\n  95 |     await pageObject.submit();\n  96 |     // Aserción: La aplicación no ejecuta scripts y maneja el rechazo limpiamente\n  97 |     await pageObject.expectError();\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:94:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:41.588Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-f0469-es-de-Descuento-en-Checkout-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-f0469-es-de-Descuento-en-Checkout-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-f0469-es-de-Descuento-en-Checkout-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                        "column": 22,
+                        "line": 94
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-3b60ae98286f7e354799",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 91,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_003_023: [@P2] Verificar criterio: Si el cupón ha expirado o no existe, se muestra el mensaje: ... en Aplicación de Cupones de Descuento en Checkout",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 482,
+                      "error": {
+                        "message": "TypeError: pageObject.submit is not a function",
+                        "stack": "TypeError: pageObject.submit is not a function\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:109:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                          "column": 22,
+                          "line": 109
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 107 |\u001b[39m     \u001b[90m// Precondición: Entorno con servicios de notificación y mensajería habilitados.\u001b[39m\n \u001b[90m 108 |\u001b[39m     \u001b[90m// Ejecución de flujo del caso de prueba\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39msubmit()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[90m// Verificar resultado esperado\u001b[39m\n \u001b[90m 111 |\u001b[39m     \u001b[90m// Resultado esperado: El sistema satisface íntegramente el criterio: Si el cupón ha expirado o no existe, se muestra el mensaje: \"El cupón ingresado no es válido o ha expirado\".\u001b[39m\n \u001b[90m 112 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m''\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                            "column": 22,
+                            "line": 109
+                          },
+                          "message": "TypeError: pageObject.submit is not a function\n\n  107 |     // Precondición: Entorno con servicios de notificación y mensajería habilitados.\n  108 |     // Ejecución de flujo del caso de prueba\n> 109 |     await pageObject.submit();\n      |                      ^\n  110 |     // Verificar resultado esperado\n  111 |     // Resultado esperado: El sistema satisface íntegramente el criterio: Si el cupón ha expirado o no existe, se muestra el mensaje: \"El cupón ingresado no es válido o ha expirado\".\n  112 |     await expect(page).not.toHaveTitle('');\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:109:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:43.264Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-21bed-es-de-Descuento-en-Checkout-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-21bed-es-de-Descuento-en-Checkout-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-21bed-es-de-Descuento-en-Checkout-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                        "column": 22,
+                        "line": 109
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-95f7f88ca45e6286c8b6",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 106,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_004_024: [@P1] Verificar flujo exitoso principal para Carga de Imagen de Perfil de Usuario",
+              "ok": true,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 614,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:44.916Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-1f0523043ca93c4f9bc2",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 120,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_004_025: [@P1] Validar rechazo al enviar formulario con campos requeridos vacíos en Carga de Imagen de Perfil de Usuario",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6168,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\u001b[22m\n\n    at CarritoDeComprasYCheckoutPage.expectError (D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts:53:35)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:136:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts",
+                          "column": 35,
+                          "line": 53
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\CarritoDeComprasYCheckoutPage.ts:53\n\n\u001b[0m \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m   \u001b[36masync\u001b[39m expectError(messagePattern\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m \u001b[33mRegExp\u001b[39m \u001b[33m|\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorAlert)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mif\u001b[39m (messagePattern) {\n \u001b[90m 55 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39merrorAlert)\u001b[33m.\u001b[39mtoContainText(messagePattern)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts",
+                            "column": 35,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert').filter({ hasText: /inválido|expirado|insuficiente|máximo/i })\u001b[22m\n\n\n   at ..\\pages\\CarritoDeComprasYCheckoutPage.ts:53\n\n  51 |\n  52 |   async expectError(messagePattern?: RegExp | string) {\n> 53 |     await expect(this.errorAlert).toBeVisible();\n     |                                   ^\n  54 |     if (messagePattern) {\n  55 |       await expect(this.errorAlert).toContainText(messagePattern);\n  56 |     }\n    at CarritoDeComprasYCheckoutPage.expectError (D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts:53:35)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:136:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:45.596Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-644f8-Imagen-de-Perfil-de-Usuario-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-644f8-Imagen-de-Perfil-de-Usuario-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-644f8-Imagen-de-Perfil-de-Usuario-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\pages\\CarritoDeComprasYCheckoutPage.ts",
+                        "column": 35,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-a72f01f8f58c0465953d",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 133,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_004_026: [@P2] Validar límites inferiores (Mínimo - 1 e Inmediato Válido) en Carga de Imagen de Perfil de Usuario",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 547,
+                      "error": {
+                        "message": "TypeError: pageObject.fillCredentials is not a function",
+                        "stack": "TypeError: pageObject.fillCredentials is not a function\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:147:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                          "column": 22,
+                          "line": 147
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 145 |\u001b[39m     \u001b[90m// Precondición: Pantalla de captura de datos habilitada para Carga de Imagen de Perfil de Usuario.\u001b[39m\n \u001b[90m 146 |\u001b[39m     \u001b[90m// 1. Probar valor frontera Min - 1 (Inválido)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 147 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39mvalidUser\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39minvalidUser\u001b[33m.\u001b[39mshortPassword)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 148 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39msubmit()\u001b[33m;\u001b[39m\n \u001b[90m 149 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mexpectError(\u001b[35m/mínimo|longitud insuficiente|longitud/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 150 |\u001b[39m     \u001b[90m// 2. Probar valor frontera Min exacto (Válido)\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                            "column": 22,
+                            "line": 147
+                          },
+                          "message": "TypeError: pageObject.fillCredentials is not a function\n\n  145 |     // Precondición: Pantalla de captura de datos habilitada para Carga de Imagen de Perfil de Usuario.\n  146 |     // 1. Probar valor frontera Min - 1 (Inválido)\n> 147 |     await pageObject.fillCredentials(testData.auth.validUser.email, testData.auth.invalidUser.shortPassword);\n      |                      ^\n  148 |     await pageObject.submit();\n  149 |     await pageObject.expectError(/mínimo|longitud insuficiente|longitud/i);\n  150 |     // 2. Probar valor frontera Min exacto (Válido)\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:147:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:45.917Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-9932c-Imagen-de-Perfil-de-Usuario-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-9932c-Imagen-de-Perfil-de-Usuario-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-9932c-Imagen-de-Perfil-de-Usuario-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                        "column": 22,
+                        "line": 147
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-654c193b9836a325ffa8",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 144,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_004_027: [@P2] Validar límites superiores (Máximo exacto y Máximo + 1) en Carga de Imagen de Perfil de Usuario",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 459,
+                      "error": {
+                        "message": "TypeError: pageObject.fillCredentials is not a function",
+                        "stack": "TypeError: pageObject.fillCredentials is not a function\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:163:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                          "column": 22,
+                          "line": 163
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 161 |\u001b[39m     \u001b[90m// Precondición: Pantalla de captura de datos habilitada para Carga de Imagen de Perfil de Usuario.\u001b[39m\n \u001b[90m 162 |\u001b[39m     \u001b[90m// 1. Probar valor frontera Max exacto (Válido)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 163 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39mvalidUser\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39minvalidUser\u001b[33m.\u001b[39mboundaryMaxPassword)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 164 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39msubmit()\u001b[33m;\u001b[39m\n \u001b[90m 165 |\u001b[39m     \u001b[90m// 2. Probar valor frontera Max + 1 (Inválido)\u001b[39m\n \u001b[90m 166 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39mvalidUser\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39minvalidUser\u001b[33m.\u001b[39mlongPassword)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                            "column": 22,
+                            "line": 163
+                          },
+                          "message": "TypeError: pageObject.fillCredentials is not a function\n\n  161 |     // Precondición: Pantalla de captura de datos habilitada para Carga de Imagen de Perfil de Usuario.\n  162 |     // 1. Probar valor frontera Max exacto (Válido)\n> 163 |     await pageObject.fillCredentials(testData.auth.validUser.email, testData.auth.invalidUser.boundaryMaxPassword);\n      |                      ^\n  164 |     await pageObject.submit();\n  165 |     // 2. Probar valor frontera Max + 1 (Inválido)\n  166 |     await pageObject.fillCredentials(testData.auth.validUser.email, testData.auth.invalidUser.longPassword);\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:163:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:47.568Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-5718f-Imagen-de-Perfil-de-Usuario-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-5718f-Imagen-de-Perfil-de-Usuario-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-5718f-Imagen-de-Perfil-de-Usuario-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                        "column": 22,
+                        "line": 163
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-0dbeba3b1f8e07059726",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 160,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_004_028: [@P1] Verificar resistencia a inyecciones, caracteres especiales y entradas anómalas en Carga de Imagen de Perfil de Usuario",
+              "ok": false,
+              "tags": [
+                "P1]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 472,
+                      "error": {
+                        "message": "TypeError: pageObject.fillCredentials is not a function",
+                        "stack": "TypeError: pageObject.fillCredentials is not a function\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:179:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                          "column": 22,
+                          "line": 179
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 177 |\u001b[39m     \u001b[90m// Precondición: Módulo expuesto y accesible para recepción de datos.\u001b[39m\n \u001b[90m 178 |\u001b[39m     \u001b[90m// Prueba de robustez frente a XSS y SQL Injection\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 179 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39msecurityPayloads\u001b[33m.\u001b[39mxss\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39msecurityPayloads\u001b[33m.\u001b[39msqli)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 180 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39msubmit()\u001b[33m;\u001b[39m\n \u001b[90m 181 |\u001b[39m     \u001b[90m// Aserción: La aplicación no ejecuta scripts y maneja el rechazo limpiamente\u001b[39m\n \u001b[90m 182 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mexpectError()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                            "column": 22,
+                            "line": 179
+                          },
+                          "message": "TypeError: pageObject.fillCredentials is not a function\n\n  177 |     // Precondición: Módulo expuesto y accesible para recepción de datos.\n  178 |     // Prueba de robustez frente a XSS y SQL Injection\n> 179 |     await pageObject.fillCredentials(testData.securityPayloads.xss, testData.securityPayloads.sqli);\n      |                      ^\n  180 |     await pageObject.submit();\n  181 |     // Aserción: La aplicación no ejecuta scripts y maneja el rechazo limpiamente\n  182 |     await pageObject.expectError();\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:179:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:49.366Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-a7201-Imagen-de-Perfil-de-Usuario-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-a7201-Imagen-de-Perfil-de-Usuario-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-a7201-Imagen-de-Perfil-de-Usuario-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                        "column": 22,
+                        "line": 179
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-286b3094e75d1d329b11",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 176,
+              "column": 7
+            },
+            {
+              "title": "TC_RF_004_029: [@P2] Verificar criterio: Al cargar un archivo que no sea imagen o supere el límite de... en Carga de Imagen de Perfil de Usuario",
+              "ok": false,
+              "tags": [
+                "P2]"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 496,
+                      "error": {
+                        "message": "TypeError: pageObject.fillCredentials is not a function",
+                        "stack": "TypeError: pageObject.fillCredentials is not a function\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:194:22",
+                        "location": {
+                          "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                          "column": 22,
+                          "line": 194
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 192 |\u001b[39m     \u001b[90m// Precondición: Entorno con servicios de notificación y mensajería habilitados.\u001b[39m\n \u001b[90m 193 |\u001b[39m     \u001b[90m// 1. Probar valor frontera Max exacto (Válido)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 194 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39mvalidUser\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39minvalidUser\u001b[33m.\u001b[39mboundaryMaxPassword)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 195 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39msubmit()\u001b[33m;\u001b[39m\n \u001b[90m 196 |\u001b[39m     \u001b[90m// 2. Probar valor frontera Max + 1 (Inválido)\u001b[39m\n \u001b[90m 197 |\u001b[39m     \u001b[36mawait\u001b[39m pageObject\u001b[33m.\u001b[39mfillCredentials(testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39mvalidUser\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m testData\u001b[33m.\u001b[39mauth\u001b[33m.\u001b[39minvalidUser\u001b[33m.\u001b[39mlongPassword)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                            "column": 22,
+                            "line": 194
+                          },
+                          "message": "TypeError: pageObject.fillCredentials is not a function\n\n  192 |     // Precondición: Entorno con servicios de notificación y mensajería habilitados.\n  193 |     // 1. Probar valor frontera Max exacto (Válido)\n> 194 |     await pageObject.fillCredentials(testData.auth.validUser.email, testData.auth.invalidUser.boundaryMaxPassword);\n      |                      ^\n  195 |     await pageObject.submit();\n  196 |     // 2. Probar valor frontera Max + 1 (Inválido)\n  197 |     await pageObject.fillCredentials(testData.auth.validUser.email, testData.auth.invalidUser.longPassword);\n    at D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts:194:22"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-02T23:30:51.201Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-68366-Imagen-de-Perfil-de-Usuario-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-68366-Imagen-de-Perfil-de-Usuario-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\workspace\\agentic\\test-results\\carrito_de_compras_y_check-68366-Imagen-de-Perfil-de-Usuario-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\workspace\\agentic\\playwright-suite\\tests\\carrito_de_compras_y_checkout.spec.ts",
+                        "column": 22,
+                        "line": 194
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "542bc75233bbfcd42029-6682b0c3456ba17a011c",
+              "file": "carrito_de_compras_y_checkout.spec.ts",
+              "line": 191,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-02T23:29:42.800Z",
+    "duration": 69423.204,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 26,
+    "flaky": 0
+  }
+}

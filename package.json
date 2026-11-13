@@ -1,0 +1,26 @@
+{
+  "name": "agentic",
+  "version": "1.0.0",
+  "description": "Bienvenido a la suite de **Agente QA ISTQB**, una solución integral diseñada para tomar cualquier documento de especificación de requerimientos (historias de usuario, requerimientos funcionales, especificaciones técnicas o reglas de negocio), analizarlas rigurosamente mediante las técnicas formales de diseño de pruebas de caja negra del estándar **ISTQB (International Software Testing Qualifications Board)** y generar automáticamente un libro de cálculo en **Microsoft Excel (.xlsx)** listo para ejecución, gestión y trazabilidad.",
+  "main": "index.js",
+  "scripts": {
+    "test:playwright": "playwright test -c ./playwright-suite/playwright.config.ts",
+    "test:playwright:headed": "playwright test -c ./playwright-suite/playwright.config.ts --headed",
+    "test:playwright:ui": "playwright test -c ./playwright-suite/playwright.config.ts --ui",
+    "test:playwright:report": "playwright show-report ./playwright-suite/playwright-report",
+    "qa:generate-excel": "python qa_agent.py -i ejemplo_requerimientos.md -o Casos_de_Prueba_ISTQB_Ejemplo.xlsx",
+    "qa:generate-playwright": "python playwright_agent.py -i Casos_de_Prueba_ISTQB_Ejemplo.xlsx -o ./playwright-suite",
+    "qa:full-pipeline": "python qa_agent.py -i ejemplo_requerimientos.md -o Casos_de_Prueba_ISTQB_Ejemplo.xlsx && python playwright_agent.py -i Casos_de_Prueba_ISTQB_Ejemplo.xlsx -o ./playwright-suite",
+    "qa:run-tests": "python test_runner_agent.py --suite-dir ./playwright-suite --project chromium",
+    "qa:end-to-end": "npm run qa:full-pipeline && npm run qa:run-tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
