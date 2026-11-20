@@ -18,11 +18,11 @@ export class CartPage {
         this.description = page.locator('[data-test="description"]');
     }
 
-    async checkoutbtn () {
+    async goToCheckout () {
         await this.checkoutButton.click();
     }
 
-    async continuar () {
+    async continueShopping () {
         await this.continueButton.click();
     }
 }

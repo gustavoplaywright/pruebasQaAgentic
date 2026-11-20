@@ -5,12 +5,14 @@ export class CheckoutPage {
     readonly firstName: Locator;
     readonly lastName: Locator;
     readonly postalCode: Locator;
+    readonly continue: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.firstName = page.locator('[data-test="firstName"]');
         this.lastName = page.locator('[data-test="lastName"]');
         this.postalCode = page.locator('[data-test="postalCode"]');
+        this.continue = page.locator('[data-test="continue"]');
     }
 
 
@@ -20,6 +22,9 @@ async fillInformation(first: string, last: string, zip: string) {
         await this.postalCode.fill(zip);
     }
 
+async continueToOverview(){
+    await this.continue.click();
 }
 
+}
 

@@ -5,6 +5,7 @@ import { InventoryPage } from '../pages/saucedemoInventorypage';
 import { CartPage } from '@pages/saucedemoCart';
 import { SauceDemoSteps } from '@pages/saucedemo.steps';
 import { log } from 'node:console';
+import {OverviewPage} from '@pages/saucedemoOverview'
 
 let sauceDemoPage: SauceDemoPage;
 let checkoutPage: CheckoutPage;
@@ -39,27 +40,29 @@ test('Login fallido',async({page})=>{
 })
 
 test('Compra exitosa', async({page})=>{
-    const sauceDemoPage = new SauceDemoPage(page);
-    const inventoryPage = new InventoryPage(page);
+
+    const loginPage = new SauceDemoPage(page);
+    const inventory = new InventoryPage(page);
+    const steps = new SauceDemoSteps(loginPage, inventory);
     const saucedemoCheckout = new CheckoutPage(page);
     const cartPage = new CartPage(page);
-    await sauceDemoPage.goto();
-    await sauceDemoPage.login('standard_user', 'secret_sauce'); /*Aca paso el metodo de saucedemoLogin*/
-    await expect(page.getByText('Products')).toBeVisible();
+    const overviewPage = new OverviewPage(page);
+    /*await sauceDemoPage.goto();*/
+    await steps.loginSuccessfully('standard_user','secret_sauce'); /*Aca paso el metodo de saucedemoLogin*/
+
 
     /*Reemplazo mis pasos por el metodo goToCart() de la page saucedemoInventorypage.ts
 
-    await page.locator('[data-test="shopping-cart-link"]').click();*/
-    await page.locator('#add-to-cart-sauce-labs-backpack').click();
-    await page.locator('#add-to-cart-sauce-labs-fleece-jacket').click();
-    await inventoryPage.goToCart();
-    await cartPage.checkoutbtn();
-    /*reemplazo por el de arriba await page.locator('[data-test="checkout"]').click();*/
+    await page.locator('[data-test="shopping-cart-link"]').click();
+        await page.locator('#add-to-cart-sauce-labs-backpack').click();
+    await page.locator('#add-to-cart-sauce-labs-fleece-jacket').click();*/
+    await inventory.backpack.click();
+    await inventory.fleeceJacket.click();
+    await inventory.goToCart();
+    await cartPage.goToCheckout();
 
-    
-    await expect(page.getByText('Checkout: Your Information')).toBeVisible();
-
-  
+    /*reemplazo por el de arriba await page.locator('[data-test="checkout"]').click();*/    
+    await expect(page.getByText('Checkout: Your Information')).toBeVisible();  
     await saucedemoCheckout.fillInformation('Gustavo', 'Morales', 'AB1708'); /*Aca paso el metodo de saucedemoCheckout.ts*/
    /* antes de llamar al metodo checkout se hacia asi
     await checkoutPage.firstName.fill('Gustavo');
@@ -72,8 +75,11 @@ test('Compra exitosa', async({page})=>{
     await page.locator('[data-test="postalCode"]').fill('AB1708');*/
 
 
-    await page.locator('[data-test="continue"]').click();
+    await saucedemoCheckout.continueToOverview();
     /*await cartPage.checkoutbtn();*/
     await expect(page.getByText('Checkout: Overview')).toBeVisible();
+    await overviewPage.finish();
+    await expect(page.getByText('Thank you for your order!')).toBeVisible();
+   
 })
 
